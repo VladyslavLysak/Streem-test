@@ -1,0 +1,34 @@
+@mixin flex-container($direction, $justify, $align) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.home-container {
+    .user-container {
+        padding: 1em 0;
+        border-bottom: 2px solid rgb(204, 204, 204);
+
+        ul {
+            padding: 0;
+            margin: 0;
+            @include flex-container(row, space-between, center);
+
+            li {
+                max-width: 100px;
+                h6 {
+                    text-align: center;
+                    font-weight: 700;
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+        .user-avatar {
+            width: 150px;
+            height: 150px;
+        }
+    }
+}

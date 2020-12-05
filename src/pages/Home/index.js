@@ -10,6 +10,8 @@ import {
     getUsers
 } from '../../selectors';
 
+import RenderUser from '../../components/Users/RenderUser';
+
 
 const Home = (props) => {
 
@@ -21,9 +23,11 @@ const Home = (props) => {
         await props.fetchUsers();
     }
 
+    const { users } = props;
+
     return (
-        <div>
-            home
+        <div className='home-container'>
+            {users.map(user => <RenderUser user={user} key={user.id}/>)}
         </div>
     )
 }

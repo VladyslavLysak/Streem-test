@@ -11,6 +11,6 @@ export default (state = initialState, { type, payload }) => {
         case FETCH_USERS_SUCCESS:
             return R.merge(state, payload);
         default:
-            return false;
+            return state;
     }
 }

@@ -14,13 +14,17 @@ const App = () => {
     <div className='main-container'>
       <div className='container'>
         <Router>
-          <Header />
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/:id" component={User}/>
-            <Route component={errorPage} />
-          </Switch>
-          <Footer />
+          <div className='content'>
+            <Header />
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/:id" component={User} />
+              <Route component={errorPage} />
+            </Switch>
+          </div>
+          <footer>
+            <Footer />
+          </footer>
         </Router>
       </div>
     </div>
