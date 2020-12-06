@@ -6,6 +6,8 @@
 * {
     text-decoration: none !important;
     list-style-type: none;
+    box-shadow: none !important;
+    outline: none !important;
 }
 
 ul {
@@ -29,5 +31,37 @@ ul {
     }
     footer {
         flex: 0;
+    }
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-container {
+    height: 80vh;
+}
+
+.button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 8px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    transition-duration: 0.6s;
+    border-radius: 50px;
+    border: 2px solid white;
+
+    &:hover,
+    &:active,
+    &:hover:active {
+        background-color: white;
+        color: black;
+        border: 2px solid black;
     }
 }

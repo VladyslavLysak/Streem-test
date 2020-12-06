@@ -1,2 +1,10 @@
 .header-container {
+    display: flex;
+    a {
+        color: black;
+
+        &:hover{
+            color: black;
+        }
+    }
 }

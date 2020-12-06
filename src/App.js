@@ -18,7 +18,7 @@ const App = () => {
             <Header />
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route path="/:id" component={User} />
+              <Route path="/user/:id" component={User} />
               <Route component={errorPage} />
             </Switch>
           </div>
