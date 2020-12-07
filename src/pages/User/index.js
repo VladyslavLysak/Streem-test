@@ -41,7 +41,6 @@ const User = (props) => {
                 .then(res => {
                     window.location.href = `/user/${userId}`;
                 });
-
         } catch (e) { }
     };
 
